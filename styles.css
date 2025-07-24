@@ -1,5 +1,9 @@
 /* shared styles */
 
+.navbar, .banner, .main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
 .display-flex{
     display: flex;
 }
@@ -17,6 +21,14 @@
     color: rgba(0, 0, 0, 0.5);
     font-size: 22px;
     font-weight: 400;
+}
+.button{
+     background-color: rgba(233, 90, 8, 1);
+    color: white;
+    padding: 20px 80px;
+    font-size: 1rem;
+    font-weight: 600px;
+    border: none;
 }
 
 /* header styles */
@@ -42,10 +54,6 @@
 .text-light{
     color: rgba(137, 135, 161, 1);
 }
-.navbar, .banner{
-    max-width: 1140px;
-    margin: 0 auto;
-}
 
 /*banner styles*/
 
@@ -66,6 +74,22 @@
     width: 100%;
 }
 
+/*main styles*/
+
+.plants{
+    align-items: center;
+    text-align: center;
+}
+.plant-img-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    width: 100%;
+}
+.plant-image{
+    width: 100%;
+}
+
 /* responsive media query */
 
 @media screen and (max-width: 576px) {
@@ -77,4 +101,12 @@
     .banner{
         flex-direction: column-reverse;
     }
-}
+    .plant-img-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    .plant-image{
+        width: 100%;
+    }
+}   
