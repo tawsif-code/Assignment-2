@@ -12,9 +12,9 @@
         <nav class="navbar display-flex">
             <img src="assets/logo.png" alt="">
             <ul class="nav-link display-flex">
-                <li class="nav-item"><a href="" class="nav-link text-dark">Home</a></li>
-                <li class="nav-item"><a href="" class="nav-link text-light">Shop</a></li>
-                <li class="nav-item"><a href="" class="nav-link text-light">About us</a></li>
+                <li class="nav-item"><a href="" class="nav-link text-dark mobile">Home</a></li>
+                <li class="nav-item"><a href="" class="nav-link text-light mobile">Shop</a></li>
+                <li class="nav-item"><a href="" class="nav-link text-light mobile">About us</a></li>
                 <li class="nav-item"><a href="" class="nav-link text-dark"><i class="fa-solid fa-cart-shopping"></i>Cart ($56)</a></li>
             </ul>
         </nav>
@@ -26,6 +26,7 @@
             <img src="assets/hero-flower.png" alt="">
         </div>
     </header>
+
     <main class="main">
         <section class="plants">
             <div class="our-plant">
@@ -33,7 +34,7 @@
             <p class="plant-description text-description">Indulge your senses with the beauty and fragrance of our fresh flower shop.
                  From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
             </div>
-            <div class="plant-img-container">
+            <div class="plant-img-container hidden">
                 <div class="img-detail">
                     <img class="plant-image" src="assets/sample-flower-image.png" alt="">
                     <h2>Lily Blossom</h2>
@@ -86,8 +87,8 @@
         </section>
         <section class="flower-plant-lover display-flex">
             <div class="lover">
-                <img id="badge" class="hidden" src="assets/trusted-badge.png" alt="">
                 <img src="assets/flower-store.png" alt="">
+                <img class="badge" src="assets/trusted-badge.png" alt="">
             </div>
             <div class="loving-reason">
                 <h1 class="reason-title text-title-dark">Flower & Plants Lover</h1>
@@ -108,45 +109,38 @@
             <h1 class="text-title-orange">Latest <span class="text-title-dark">Deals</span></h1>
             <p class="text-description">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
         </section>
-        <div class="container">
-
-    <!-- Left Column -->
-    <div class="left-column">
-      <!-- Card 1 -->
-      <div class="card">
-        <img src="assets/deal-bloom.png" alt="">
-        <div class="overlay">
-          <p>60% Off | Bloom Plant</p>
-          <a href="">Shop Now</a>
-        </div>
+        <div class="container hidden">
+        <div class="left-column">
+            <div class="card">
+                <img src="assets/deal-bloom.png" alt="">
+                <div class="overlay">
+                <p>60% Off | Bloom Plant</p>
+                <a href="">Shop Now</a>
+            </div>
       </div>
-
-      <!-- Card 2 -->
       <div class="card">
-        <img src="assets/deal-ana.png" alt="">
-        <div class="overlay">
-          <p>30% Off | Ana Plant</p>
-          <a href="">Shop Now</a>
+            <img src="assets/deal-ana.png" alt="">
+            <div class="overlay">
+            <p>30% Off | Ana Plant</p>
+            <a href="">Shop Now</a>
+            </div>
+            </div>
         </div>
-      </div>
-    </div>
-
-    <!-- Right Column -->
-    <div class="right-column">
-      <div class="card big-card">
-        <img src="assets/deal-zabo.png" alt="">
-        <div class="overlay">
-          <div class="text-box">
-            <p style="font-size: 24px; font-weight: bold;">
-              25% Off | <span>Zabo Plant</span>
-            </p>
+        <div class="right-column">
+            <div class="card big-card">
+            <img src="assets/deal-zabo.png" alt="">
+            <div class="overlay">
+            <div class="text-box">
+                <p style="font-size: 24px; font-weight: bold;">
+                    25% Off | <span>Zabo Plant</span>
+                </p>
           </div>
           <a href="" style="font-size: 16px;">Shop Now</a>
         </div>
       </div>
     </div>
     </main>
-    <footer>
+    <footer class="hidden">
         <section class="hero-section">
         <div class="overlay"></div>
         <div class="content">

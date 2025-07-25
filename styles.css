@@ -93,8 +93,19 @@
     margin: 210px 100px auto;
     gap: 60px;
 }
-#badge{
-    max-width: 286px;
+.lover{
+    position: relative;
+    width: 100%;
+}
+.lover img{
+    width: 550px;
+    object-fit: cover;
+}
+.badge{
+    position: absolute;
+    top: -45%;
+    right: -100px;
+    height: 100%;
 }
 .deals{
     text-align: center;
@@ -262,21 +273,47 @@
 /* responsive media query */
 
 @media screen and (max-width: 576px) {
-    .navbar,
     .nav-link,
     .banner{
         flex-direction: column;
     }
+    .mobile{
+        display: none;
+    }
     .banner{
         flex-direction: column-reverse;
     }
+    .banner-title{
+        text-align: left;
+    }
     .plant-img-container{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    width: 100%;
+    margin: 0px auto;
+    }
+    .img-detail{
+        width: 100%;
+        margin: auto;
     }
     .plant-image{
+    width: 100%;
+    margin: auto;
+    }
+    .flower-plant-lover{
+        flex-direction: column;
+        margin: auto;
+        
+    }
+    .lover img{
         width: 100%;
+    }
+    .badge{
+        display: none;
+    }
+    .deals{
+        margin: auto;
     }
 }   
 .hidden{
