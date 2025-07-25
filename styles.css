@@ -117,10 +117,10 @@
     margin: 130px 150px auto;
 }
 .container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
 }
 
 .left-column{
@@ -270,29 +270,28 @@
     .banner-title{
         text-align: left;
     }
-    .our-plant{
-        max-width: 360px;
-        margin: 0px auto;
+    .plants{
+        width: 100%;
     }
     .plant-img-container{
     max-width: 360px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
-    margin: 0%;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: auto;
+    justify-content: center;
     }
     .img-detail{
-        width: 100%;
         margin: auto;
+        gap: 5px;
     }
     .plant-image{
     width: 100%;
-    margin: auto;
+    margin: 0px;
     }
     .flower-plant-lover{
         flex-direction: column;
-        margin: auto;
-        
+        margin: 100px auto; 
     }
     .lover img{
         width: 100%;
@@ -305,6 +304,12 @@
     }
     .outro{
         flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+    .about-shop{
+        width: 100%;
+        margin: auto;
     }
     .footer-link{
     display: grid;
@@ -313,11 +318,7 @@
     .column-2{
         order: 1;
     }
-    .navbar,
-    .banner,
-    .main,
-    .hero-section,
-    .outro{
-        width: 100%;
+    .icon img{
+        gap: 20px;
     }
 }   
